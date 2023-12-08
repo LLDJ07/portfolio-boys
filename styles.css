@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #262626;
+    background-color: #121212;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #191970;
+    background-color: #2f2b3a;
     color: #fff;
     text-align: center;
     padding: 1em;
@@ -26,8 +26,8 @@ section {
 }
 
 .student-card {
-    background-color: #D3D3D3;
-    border: 1px solid #D3D3D3;
+    background-color: #2f2b3a;
+    border: 1px solid #CFC0BD;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -64,7 +64,7 @@ a:hover {
 }
 
 footer {
-    background-color: #191970;
+    background-color: #2f2b3a;
     color: #fff;
     text-align: center;
     padding: 1em;
@@ -74,7 +74,7 @@ footer {
 
 
 .student-card:hover {
-    background-color: #F0FFFF; /* Verander de kleur naar wens */
+    background-color: #7e7e7e; /* Verander de kleur naar wens */
     transform: translateY(-15px); /* Maak het element een beetje omhoog gaan */
     transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Voeg een soepele overgang toe */
 
