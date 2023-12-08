@@ -12,7 +12,7 @@ body {
 
 header {
     background-color: #3B3355;
-    color: #3B3355;
+    color: #fff;
     text-align: center;
     padding: 1em;
     width: 100%;
@@ -65,7 +65,7 @@ a:hover {
 
 footer {
     background-color: #3B3355;
-    color: #3B3355;
+    color: #fff;
     text-align: center;
     padding: 1em;
     width: 100%;
