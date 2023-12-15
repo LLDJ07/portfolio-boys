@@ -84,7 +84,7 @@ footer {
 
 
 .student-card:hover {
-    background-color: #abaab0; /* Verander de kleur naar wens */
+    background-color: #827f88; /* Verander de kleur naar wens */
     transform: translateY(-15px); /* Maak het element een beetje omhoog gaan */
     transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Voeg een soepele overgang toe */
 
