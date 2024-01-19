@@ -45,25 +45,55 @@
     </footer>
 
 
-Sure, let's add a simple interactive element using JavaScript. We'll create a function that changes the background color of the student cards when a user hovers over them. Add the following JavaScript code just before the closing </body> tag in your HTML file:
+    <div class="spel-container">
+        <h2>Raad het Nummer Spel</h2>
+        <p>Probeer het juiste nummer te raden tussen 1 en 10!</p>
+        <input type="number" id="invoer-veld" placeholder="Voer je gok in">
+        <button id="indienen-knop">Gok Indienen</button>
+        <p id="resultaat-bericht"></p>
+    </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const willekeurigGetal = Math.floor(Math.random() * 10) + 1;
+            let pogingenOver = 3;
+    
+            const invoerVeld = document.getElementById('invoer-veld');
+            const indienenKnop = document.getElementById('indienen-knop');
+            const resultaatBericht = document.getElementById('resultaat-bericht');
+    
+            indienenKnop.addEventListener('click', function () {
+                const gebruikersGok = parseInt(invoerVeld.value);
+    
+                if (!isNaN(gebruikersGok)) {
+                    if (gebruikersGok === willekeurigGetal) {
+                        resultaatBericht.textContent = 'Gefeliciteerd! Je hebt het juiste nummer geraden!';
+                        resultaatBericht.style.color = 'green';
+                        invoerVeld.disabled = true;
+                        indienenKnop.disabled = true;
+                    } else {
+                        pogingenOver--;
+                        resultaatBericht.textContent = `Foute gok! Je hebt nog ${pogingenOver} pogingen over.`;
+    
+                        if (pogingenOver === 0) {
+                            resultaatBericht.textContent = `Sorry, je hebt geen pogingen meer. Het juiste nummer was ${willekeurigGetal}.`;
+                            resultaatBericht.style.color = 'red';
+                            invoerVeld.disabled = true;
+                            indienenKnop.disabled = true;
+    
+                            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const studentCards = document.querySelectorAll('.student-card');
-
-        studentCards.forEach(function (card) {
-            card.addEventListener('mouseover', function () {
-                card.style.backgroundColor = '#f0f0f0'; // Change background color on hover
-            });
-
-            card.addEventListener('mouseout', function () {
-                card.style.backgroundColor = ''; // Reset background color on mouseout
+                        }
+                    }
+                } else {
+                    resultaatBericht.textContent = 'Voer aub een geldig nummer in.';
+                    resultaatBericht.style.color = 'orange';
+                }
+    
+                invoerVeld.value = '';
             });
         });
-    });
-</script>
-
+    </script>
     
 </body>
 </html>
