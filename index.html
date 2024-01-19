@@ -44,6 +44,27 @@
         <p>&copy; 2023 Studenten Portfolio</p>
     </footer>
 
+
+Sure, let's add a simple interactive element using JavaScript. We'll create a function that changes the background color of the student cards when a user hovers over them. Add the following JavaScript code just before the closing </body> tag in your HTML file:
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const studentCards = document.querySelectorAll('.student-card');
+
+        studentCards.forEach(function (card) {
+            card.addEventListener('mouseover', function () {
+                card.style.backgroundColor = '#f0f0f0'; // Change background color on hover
+            });
+
+            card.addEventListener('mouseout', function () {
+                card.style.backgroundColor = ''; // Reset background color on mouseout
+            });
+        });
+    });
+</script>
+
+    
 </body>
 </html>
 </body>
