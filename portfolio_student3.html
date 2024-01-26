@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luca ten Have Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var header = document.querySelector('header');
+
+      header.addEventListener('click', function() {
+        changeBackgroundColor();
+      });
+
+      // Function to change background color randomly
+      function changeBackgroundColor() {
+        var randomColor = getRandomColor();
+        header.style.backgroundColor = randomColor;
+      }
+
+      // Function to generate a random color
+      function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    });             
+  </script>
 </head>
 <body>
+
+  <header>
     
+    
+<div>
+    
+    
+    </div>
+    <h1>Portfolio</h1>
+  </header>
+
+  <section>
+    <h2>Over Mij</h2>
+    <img src="https://cdn.discordapp.com/attachments/1148212805791649914/1182626565360734259/image.png?ex=658561d1&is=6572ecd1&hm=21cf08782ef62f3ca8d1b487593ba39e14848d253656938132d263107f015e7b" alt="Trulli" width="230" height="306">
+    <p>Mijn naam is Luca ten Have en ik zit op de opleiding Software developer. Ik ben momenteel in leerjaar 1 </p>
+  </section>
+
+  <section>
+    <h2>Mijn Werk</h2>
+    <img src="c:\Users\Lucat\OneDrive\Afbeeldingen\Schermopnamen\Schermafbeelding 2024-01-26 194402.png" alt="Trulli" width="280" height="320">
+    <img src="c:\Users\Lucat\OneDrive\Afbeeldingen\Schermopnamen\Schermafbeelding 2024-01-26 194755.png" alt="Trulli" width="280" height="320">
+
+  
+
+    <article>
+      
+     
+    </article>
+
+
+  </section>
+
+ 
+  <section>
+    <h2>Opleiding</h2>
+    <p><strong>School:</strong> Aventus.</p>
+    <p><strong> Opleiding:</strong> Software developer .</p>
+    
+  </section>
+
+
+  <section>
+    <h2>Contact</h2>
+    <p><strong>E-mail:</strong> Luca ten Have.</p>
+    <p><strong>Telefoon:</strong> <a href="0619557156" target="_blank"></a></p>
+    
+    <p><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/luca-ten-have-48b12729b/" target="_blank">Mijn Linkedin</a></p>
+    <p><strong>Linkedin:</strong> <a href="https://github.com/Lucatenhave" target="_blank">Mijn github</a></p>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Luca ten Have.</p>
+  </footer>
+
 </body>
 </html>
