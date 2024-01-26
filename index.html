@@ -1,103 +1,96 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studenten Portfolio's</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luca ten Have Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var header = document.querySelector('header');
+
+      header.addEventListener('click', function() {
+        changeBackgroundColor();
+      });
+
+      // Function to change background color randomly
+      function changeBackgroundColor() {
+        var randomColor = getRandomColor();
+        header.style.backgroundColor = randomColor;
+      }
+
+      // Function to generate a random color
+      function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    });             
+  </script>
 </head>
 <body>
 
-    <header>
-        <h1>Studenten Portfolio's</h1>
-    </header>
-
-    <section>
-        <a href="portfolio_student1.html" class="student-card">
-            <img src="https://cdn.discordapp.com/attachments/1154329662793732147/1182628869317083157/Jongh_Lucas_de_1.jpg?ex=658563f6&is=6572eef6&hm=186158126b25852b96a2f2f529f87c6fad768d97c84eda7645c0da148a6cd94b& alt="Trulli" width="230" height="306">
-            <h2>Lucas de Jongh</h2>
-            <p>Web Developer</p>
-            <p>Bekijk Portfolio</p>
-        </a>
-
-        <a href="portfolio_student2.html" class="student-card">
-            <img src="https://cdn.discordapp.com/attachments/1166269945827565598/1182626946509713419/image.png?ex=6585622c&is=6572ed2c&hm=8989ddd954db1073c46ff424ef0efe7bb557662e3061fccfa0a7050e306b471e&" alt="Trulli" width="230" height="306">
-            <h2>Thijs Bakker</h2>
-            <p>Graphic Designer</p>
-            <p>Bekijk Portfolio</p>
-        </a>
-
-        <a href="portfolio_student3.html" class="student-card">
-          <img src="https://cdn.discordapp.com/attachments/1148212805791649914/1182626565360734259/image.png?ex=658561d1&is=6572ecd1&hm=21cf08782ef62f3ca8d1b487593ba39e14848d253656938132d263107f015e7b" alt="Trulli" width="230" height="306">
-            <h2>Luca ten Have</h2>
-            <p>UX/UI Designer</p>
-            <p>Bekijk Portfolio</p>
-        </a>
-    </section>
-
-    <h2>kopje</h2>
-    <div class="additional-content">
-        <p>Voor ons project in periode 2 moesten wij een portfolio maken. <br>
-            Hiervoor hebben we een hoofdpagina en persoonlijke pagina's voor moeten maken. <br>Hierboven kunt u onze pagina's bezoeken door op de foto's te drukken. <br> </p>
+  <header>
+    
+    
+<div>
+    
+    
     </div>
+    <h1>Portfolio</h1>
+  </header>
+
+  <section>
+    <h2>Over Mij</h2>
+    <img src="https://cdn.discordapp.com/attachments/1148212805791649914/1182626565360734259/image.png?ex=658561d1&is=6572ecd1&hm=21cf08782ef62f3ca8d1b487593ba39e14848d253656938132d263107f015e7b" alt="Trulli" width="230" height="306">
+    <p>Mijn naam is Luca ten Have en ik zit op de opleiding Software developer. Ik ben momenteel in leerjaar 1 </p>
+  </section>
+
+  <section>
+    <h2>Mijn Werk</h2>
+    <img src="c:\Users\Lucat\OneDrive\Afbeeldingen\Schermopnamen\Schermafbeelding 2024-01-26 194402.png" alt="Trulli" width="280" height="320">
+    <img src="c:\Users\Lucat\OneDrive\Afbeeldingen\Schermopnamen\Schermafbeelding 2024-01-26 194755.png" alt="Trulli" width="280" height="320">
+
+  
+
+    <article>
+      
+     
+    </article>
 
 
+  </section>
 
-    <div class="spel-container">
-        <h2>Raad het Nummer Spel</h2>
-        <p>Probeer het juiste nummer te raden tussen 1 en 10!</p>
-        <input type="number" id="invoer-veld" placeholder="Voer je gok in">
-        <button id="indienen-knop">Gok Indienen</button>
-        <p id="resultaat-bericht"></p>
-    </div>
+ 
+  <section>
+    <h2>Opleiding</h2>
+    <p><strong>School:</strong> Aventus.</p>
+    <p><strong> Opleiding:</strong> Software developer .</p>
+    
+  </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const willekeurigGetal = Math.floor(Math.random() * 10) + 1;
-            let pogingenOver = 3;
-    
-            const invoerVeld = document.getElementById('invoer-veld');
-            const indienenKnop = document.getElementById('indienen-knop');
-            const resultaatBericht = document.getElementById('resultaat-bericht');
-    
-            indienenKnop.addEventListener('click', function () {
-                const gebruikersGok = parseInt(invoerVeld.value);
-    
-                if (!isNaN(gebruikersGok)) {
-                    if (gebruikersGok === willekeurigGetal) {
-                        resultaatBericht.textContent = 'Gefeliciteerd! Je hebt het juiste nummer geraden!';
-                        resultaatBericht.style.color = 'green';
-                        invoerVeld.disabled = true;
-                        indienenKnop.disabled = true;
-                    } else {
-                        pogingenOver--;
-                        resultaatBericht.textContent = `Foute gok! Je hebt nog ${pogingenOver} pogingen over.`;
-    
-                        if (pogingenOver === 0) {
-                            resultaatBericht.textContent = `Sorry, je hebt geen pogingen meer. Het juiste nummer was ${willekeurigGetal}.`;
-                            resultaatBericht.style.color = 'red';
-                            invoerVeld.disabled = true;
-                            indienenKnop.disabled = true;
-    
-                            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 
-                        }
-                    }
-                } else {
-                    resultaatBericht.textContent = 'Voer aub een geldig nummer in.';
-                    resultaatBericht.style.color = 'orange';
-                }
+  <section>
+    <h2>Contact</h2>
+    <p><strong>E-mail:</strong> Luca ten Have.</p>
+    <p><strong>Telefoon:</strong> <a href="0619557156" target="_blank"></a></p>
     
-                invoerVeld.value = '';
-            });
-        });
-    </script>
+    <p><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/luca-ten-have-48b12729b/" target="_blank">Mijn Linkedin</a></p>
+    <p><strong>Linkedin:</strong> <a href="https://github.com/Lucatenhave" target="_blank">Mijn github</a></p>
+    
+  </section>
 
-    <footer>
-        <p>&copy; 2023 Studenten Portfolio</p>
-    </footer>
-    
-</body>
-</html>
+  <footer>
+    <p>&copy; 2024 Luca ten Have.</p>
+  </footer>
+
 </body>
 </html>
