@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Correct path to styles.css assuming both files are in the same directory -->
+    <link rel="stylesheet" href="lucas styles.css">
+    <title>Your Portfolio</title>
+</head>
+
+
+<body>
+    <header>
+        
+
+        
+        <h1>Lucas de Jongh</h1>
+        <p>Software development student aventus</p>
+        <img src="Jongh Lucas de.jpg" alt="Italian Trulli" style="width:350px;height:450px;" onclick="changeImage(this, 'rick-roll-rick-rolled.gif')">
+
+    </header>
+    <a href="jouw_homepagina_url">Ga naar Home</a>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Over mij</h2>
+    <section class="project left-padding">
+        <p>ik ben lucas ik ben momenteel een student op aventus, ik studeer software development op mbo niveau 4 <br>
+        diploma: geen <br>
+        stage: geen <br>
+        opleiding: software development op mbo niveau 4 jaar 1 <br>
+        </p>
+    </section>
+
+    <br>
+    <br>    
+
+    
+    <h2>vaardigheden en competenties</h2>
+    <section class="project left-padding">
+
+        <p>
+         python________[#####################################-------------] <br>
+         html/css______[#################---------------------------------] <br>
+         javascript____[##############------------------------------------] <br>
+         Nederlands____[############################----------------------] <br>
+         Engels________[##################################################] <br>
+
+
+        </p>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project left-padding">
+            <h3>Conways Game of life </h3>
+            <p>Dit zijn mijn Conway’s game of life proje
+                cten, ik heb het 2 keer gemaakt en er zat ongeveer 2 jaar tussen, de linker is de eerste die ik heb gemaakt en de rechter de tweede.</p>
+            <img src="conway1.png" alt="Italian Trulli" style="width:350px;height:350px;">          <img src="conway2.png" alt="Italian Trulli" style="width:350px;height:350px;">
+
+        </div>
+        <div class="project left-padding">
+            <h3>ray cast</h3>
+            <p>ik heb dit project ook 2 keer gemaakt met ook ongeveer 2 jaar tussen de versies</p>
+            <img src="raycast1.png" alt="Italian Trulli" style="width:700px;height:350px;">       
+            <img src="raycast2.png" alt="Italian Trulli" style="width:700px;height:350px;">     
+        </div>
+
+
+        
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <y->   <a href="mailto:your.email@example.com" class="email-knop">lldj07@hotmail.com</a>        </y-></p>
+        <p>Telefoon: <y->   <a href="tel:+123456789" class="phone-button">Bel me</a>        </y-></p>
+        <p>LinkedIn <y-> <a href="https://www.linkedin.com/in/lucas-de-jongh-56b26924b/" class="linkedin-button" target="_blank">LinkedIn</a> </y-></p>
+
+    </section>
+
+
+
+
+    <script>
+     
+        function changeImage(img, newSrc) {
+          img.style.opacity = 0;
+          setTimeout(function() {
+            img.src = newSrc;
+            img.style.opacity = 1;
+          }, 100); 
+        }
+</script>
+
+</body>
+
+</html>
