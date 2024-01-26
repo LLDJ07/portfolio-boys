@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Document</title>
+</head>
+<body>
+ <div class="wrapper">
+  <header>
+    <div class="header">
+      <h1>Portfolio van Thijs</h1>
+        <nav>
+            <label for="menu" class="toggle"></label>
+            <input type="checkbox" id="menu">
+            <ul>
+              <li><a href="https://lldj07.github.io/portfolio-boys/">Hoofdpagina</a></li>
+              <li><a href="">Luca</a></li>
+              <li><a href="">Lucas</a></li>
+            </ul>
+          </nav>
+    </div>
+  </header>
+  
+  <main>
+    <article>
+      <p>Welkom op mijn portfolio. Hier in vertel ik over mijzelf en wat voor werk ervaringen ik heb en wat voor opleidingen ik heb gedaan.</p>
+       <div class="flex-wrapper"></div>
+        <div class="img" id="Tissa"><img src="https://media.discordapp.net/attachments/1166269945827565598/1182626946509713419/image.png?ex=65b386ac&is=65a111ac&hm=26c65c094e362be58a0b8bd3e25a5480c692d41f1d5d9f94d5e08fe764c7963a&=&format=webp&quality=lossless&width=438&height=585" alt="Foto kon niet geladen worden."></div>
+      <p>Welkom op mijn portfolio. Hier in vertel ik over mijzelf en wat voor werk ervaringen ik heb en wat voor opleidingen ik heb gedaan.</p>
+      <p>Mijn naam is Thijs Bakker. Ik ben op 18-07-2002 geboren in apeldoorn. Mijn hobby's zijn drummen, gamen en muziek luisteren. 
+         een paar van mijn favoriete artiesten zijn: Meshuggah, Gojira, Mastodon, Slayer, Arctic Monkeys, Royal Republic, Denzel Curry, kendrick lamar, JPEGMAFIA en Danny Brown.
+         Mijn favoriete spellen zijn: Apex Legends, Skate 3, EAFC 24, Need For Speed most wanted (2012) en Baldurs Gate 3.
+         Het drummen doe ik in een vrienden band. Ook hou ik veel van reizen. Als ik reis is dat meestal in europa, maar ik ben ook al wel een paar keer in curaçao geweest.
+      </p>        
+    </article>
+
+  <div id="CV">
+      <p id="tekst">Curriculum vitae</p>
+      <img id="curriculumvitae" src="https://cdn.discordapp.com/attachments/1166269945827565598/1200518777121558628/image.jpg?ex=65c6793d&is=65b4043d&hm=202c8fccc9c36452c0317d2a2c6e2618c5a92e15dcab75ff9a2d989e61a8a141&" alt="CV">
+  </div>
+
+  <button onclick="toggleContent()">CV</button>
+
+    <script>
+      // JavaScript-functie om tekst en afbeelding te verbergen/weergeven
+      function toggleContent() {
+          var contentElement = document.getElementById("CV");
+          var tekstElement = document.getElementById("tekst");
+          var afbeeldingElement = document.getElementById("curriculumvitae");
+
+          // Controleer de huidige weergavestatus van de content
+          if (contentElement.style.display === "none" || contentElement.style.display === "") {
+              // Als verborgen, weergeef de content (tekst en afbeelding)
+              contentElement.style.display = "block";
+          } else {
+              // Als weergegeven, verberg de content (tekst en afbeelding)
+              contentElement.style.display = "none";
+          }
+      }
+    </script>
+    
+    <article>
+      <h1>Portfolio</h1>
+        <p>Dit is de eindopdracht die ik heb dedaan voor het eindproject in periode 1. Mijn groepje en ik moesten een presentatie geven over het vak webdevelopment en wat het inhoud.</p>
+        <div class="img" id="Presentatie"><img src="https://media.discordapp.net/attachments/1166269945827565598/1200533588110741716/IMG-20231102-WA0055.png?ex=65c68708&is=65b41208&hm=980c9931ee71f042a0e340615c703472c3ee2df46625151ed32d04d518165e2a&=&format=webp&quality=lossless&width=720&height=540" alt="Foto kon niet geladen worden."></div>
+        <div class="img" id="powerpoint"><img src="https://media.discordapp.net/attachments/1166269945827565598/1200533749461434498/image.png?ex=65c6872e&is=65b4122e&hm=2676b5c1f99074f4d9cf797b4ae52cb43d061a8ddf2e43271435ab3337a3d08c&=&format=webp&quality=lossless&width=720&height=345" alt="Foto kon niet geladen worden."></div>
+        <p>Hieronder de eerste website die ik voor webdevelopement heb gemaakt</p>
+        <div class="img" id="webdevSite"><img src="https://media.discordapp.net/attachments/1166269945827565598/1200533975303725146/opdracht_5_site.png?ex=65c68764&is=65b41264&hm=587f2a5f30bc95fe8cb6231a15cff7aba2863ad2f74e12ddb4726b90d7cb73fa&=&format=webp&quality=lossless&width=720&height=349" alt="Foto kon niet geladen worden."></div>
+        <div class="img" id="webdevCode"><img src="https://media.discordapp.net/attachments/1166269945827565598/1200534019234873534/opdracht_5_html.png?ex=65c6876f&is=65b4126f&hm=e72a8e94cdd5964b299d31607afddca65e009594f82e32ea185fa10ae6782e81&=&format=webp&quality=lossless&width=720&height=382" alt="Foto kon niet geladen worden."></div>
+        <p>Hieronder een webdev opdracht waarbij ik de site aan moest passen zodat het mijn persoonlijke site werd</p>
+        <div class="img" id="persoonlijkeSite"><img src="https://media.discordapp.net/attachments/1166269945827565598/1200534310818676827/image.png?ex=65c687b4&is=65b412b4&hm=09f50f255428540a6bec85c8ce2dc94e88bc2571e02290d199d44eb3a2d93aa5&=&format=webp&quality=lossless&width=720&height=353" alt="Foto kon niet geladen worden."></div>
+        <div class="img" id="PersoonlijkeCode"><img src="https://media.discordapp.net/attachments/1166269945827565598/1200534645343789186/image.png?ex=65c68804&is=65b41304&hm=03d5b1c7cbd5aac7cfb1a05b42447837c6e2f834ef31c5388baa8ab1bc59abe6&=&format=webp&quality=lossless&width=720&height=376" alt="Foto kon niet geladen worden."></div>
+        <p>Hieronder een programeren opdracht waarbij ik een herhalende cirkel in python moest maken.</p>
+        <div class="img" id="cirkel"><img src="https://media.discordapp.net/attachments/1166269945827565598/1200535226477191278/image.png?ex=65c6888e&is=65b4138e&hm=1526a511da4212e44b7e59e706a946bb4982dee343cad0c4617b38ade43707bf&=&format=webp&quality=lossless" alt="Foto kon niet geladen worden."></div>
+        <div class="img" id="cirkelCode"><img src="https://media.discordapp.net/attachments/1166269945827565598/1200535394383560824/image.png?ex=65c688b6&is=65b413b6&hm=ab5366afac67b51074613395ce9ab1671713c2f466d1a2526d062ffaa826f2f7&=&format=webp&quality=lossless" alt="Foto kon niet geladen worden."></div>
+        <p>Hieronder een presentatie van it & security die ik aan de leraar moest geven over een datalek</p>
+        <div class="img" id="wat"><img src="https://media.discordapp.net/attachments/1166269945827565598/1200535809519009952/image.png?ex=65c68919&is=65b41419&hm=600f7d0a7e2539936d4b20e74374919bb67780394b2311ac4bb86b62c6cc5749&=&format=webp&quality=lossless&width=720&height=403" alt="Foto kon niet geladen worden."></div>
+        <div class="img" id="gevolgen"><img src="https://media.discordapp.net/attachments/1166269945827565598/1200535877311541248/image.png?ex=65c6892a&is=65b4142a&hm=09724a57eed33b91c2cf778f88040c00acc08e6e9a227b7663d8e2b0141f8023&=&format=webp&quality=lossless&width=720&height=402" alt="Foto kon niet geladen worden."></div>
+    </article>
+    
+  </main>
+
+  <aside>
+    <p>contact informatie</p>
+     
+    <ul>
+     <li><a href="thijs289@gmail.com">thijs289@gmail.com</a></p></li>
+     <li><a href="tel:0637312228">06 3731 2228</a></li>
+     <li>Bachlaan 58 Apeldoorn</li>
+     <li><a href="https://www.linkedin.com/in/thijs-bakker-5ba12829b/">Linkedin</a></li>
+    </ul>
+  </aside>
+  
+ </div>
+</body>
+</html>

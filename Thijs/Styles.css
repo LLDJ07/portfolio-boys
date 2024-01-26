@@ -1,0 +1,114 @@
+.wrapper {
+    max-width: 1270px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    padding-right: 10px;
+    padding-left: 10px;
+    grid-template-areas: 
+    "header header header header"
+    "main main main aside"
+    "main main main aside"
+    "footer footer footer footer";
+    grid-template-rows: 80px 2fr 200px;
+    grid-gap: 1em;
+}
+
+body {
+    font-family: Arial;
+    color: white;
+    background-color: #4d4d4d;
+}
+
+p {
+    font-size: 20px;
+}
+
+header {
+    grid-area: header;
+    Background-color: black;
+    border-radius: 10px;
+}
+
+h1 {
+    float: left;
+    margin-top: -10px;
+    margin-left: 5px;
+    color: white;
+}
+
+/* verberg de input-checkbox */
+[id=menu] {
+    display: none;
+}
+
+header li {
+    float: right;
+}
+
+header li a {
+    display: block;
+    padding: 22px;
+    background-color: #000000;
+    color: white;
+    margin-right: 6px;
+}
+
+/* Change the link color on hover */
+header li a:hover {
+    background-color: #696969;
+    color: white;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+header li {
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+}
+
+#Tissa > img {
+    float: left;
+    width: 170px;
+    margin-right: 10px;
+}
+
+aside {
+    grid-area: aside;
+    border-style: inset;
+    width: 90%;
+    float: right;
+}
+
+button {
+    width: 30px;
+    height: 20px;
+    background: rgb(99, 99, 245);
+    transition: width 2s;
+}
+
+button:hover {
+  width: 100px;
+}
+
+/* Stijl voor het verbergen van de tekst en afbeelding */
+#content {
+    display: none;
+}
+
+/* Stijl voor het verbergen van de afbeelding */
+#afbeelding {
+    display: none;
+}
+
+article h1 {
+    padding-top: 10px;
+}
+#Presentatie > img {
+    width: 320px;
+    float: left;
+}
+
+#powerpoint > img { 
+    width: 520px;
+    float: right;
+}
