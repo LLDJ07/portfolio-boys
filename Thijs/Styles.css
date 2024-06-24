@@ -104,11 +104,51 @@ article h1 {
     padding-top: 10px;
 }
 #Presentatie > img {
-    width: 320px;
+    width: 360px;
     float: left;
 }
 
 #powerpoint > img { 
-    width: 520px;
-    float: right;
+    width: 580px;
+    float: left;
+}
+
+#webdevSite > img {
+    width: 1000px;
+    float: left;
+}
+
+#webdevCode > img {
+    width: 1000px;
+    float: left;
+}
+
+#persoonlijkeSite > img {
+    width: 1000px;
+    float: left;
+}
+
+#PersoonlijkeCode > img {
+    width: 1000px;
+    float: left;
+}
+
+#cirkel > img {
+    width: 1000px;
+    float: left;
+}
+
+#cirkelCode > img {
+    width: 1000px;
+    float: left;
+}
+
+#wat > img {
+    width: 1000px;
+    float: left;
+}
+
+#gevolgen > img {
+    width: 1000px;
+    float: 1000px;
 }
